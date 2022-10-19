@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -45,6 +46,7 @@
             
             <div class="container">
             <div class="eventsJazzContainer">
+                
                 
                 <div class="eventsJazzLeft eventsJazz">
                     
@@ -87,21 +89,25 @@
             
             <H2 class="eventConcertH2">о концерте</H2>
             <div class="jilinContainer evenContainer">
-                <div class="jilin1 jili2">
-                    <H2>о концерте</H2>
+                <div class="jilin1 jili2 oboutConcert">
+                    <H2 >о концерте</H2>
                 </div>
                 <div class="jili2 jilip">
                     <p>Сергей Жилин - народный артист России, виртуозный джазовый пианист, дирижер, композитор 
-                        и педагог, творчество которого широко известно как в нашей стране так и за ее пределами, откроет вам собственный музыкальный мир.<span class="more"> Вас ждут удивительные музыкальные открытия, мастерство исполнения джаза и незабываемые эмоции.
-                        аждые две недели Сергей Жилин за роялем первоклассного Steinway & Sons и его блистательная команда ждут вас в двухуровневом камерном зале с потрясающей акустикой для того, чтобы исполнить лучшие джазовые композиции и собственные импровизации.
+                        и педагог, творчество которого широко известно как в нашей стране так и за ее пределами, 
+                        откроет вам собственный музыкальный мир. <span id="dots1"></span><span id="more1"> Вас ждут 
+                            удивительные музыкальные открытия, мастерство исполнения джаза и незабываемые эмоции.
+                        аждые две недели Сергей Жилин за роялем первоклассного Steinway & Sons и его блистательная
+                         команда ждут вас в двухуровневом камерном зале с потрясающей акустикой для того, чтобы 
+                         исполнить лучшие джазовые композиции и собственные импровизации.
                         Это новый формат отдыха. </span>
                     </p>
-                    <div class="moreLink">
-                    <a  href="">подробнее</a>
+                    <div class="moreLink1">
+                        <button onclick="myFunction1()" id="myBtn1">подробнее</button> 
                     </div>
                 </div>
                 <div class="jili2 jiliImage eventConcert" >
-                    <img src="images/Polygon 1.svg" alt="img">
+                    <button><img src="images/Polygon 1.svg" alt="img"></button>
                 </div>
                 <div class="jili2 jili3">
                     <div class="eventLine"><p>Сергей Жилин - народный артист России, виртуозный джазовый пианист, дирижер, композитор и педагог.</div>
@@ -118,7 +124,10 @@
                 <div class=" clubTextEvent">
                     
                     <div class="clubTextEvent1">
-                        <img src="images/111.svg" alt="img">
+                        <p class="discount">скидка  10%</p>
+                        <p class="shop">на  покупку</p>
+                        <p class="promocode">до 25.09.   по промокоду: 2022</p>
+                        
                     </div>
                     <div class="eventLinkName">
                         <a class="navLinkName " href="">
@@ -135,11 +144,18 @@
                                    
                 <div class="clubText">
                     <h2 class="clubH2">о клубе</h2>
-                    <p>Сергей Жилин - народный артист России, виртуозный джазовый пианист, дирижер, композитор и педагог, творчество которого широко известно как в нашей стране так и за ее пределами, откроет вам собственный музыкальный мир. <span class="more">Вас ждут удивительные музыкальные открытия, мастерство исполнения джаза и незабываемые эмоции.
-                        аждые две недели Сергей Жилин за роялем первоклассного Steinway & Sons и его блистательная команда ждут вас в двухуровневом камерном зале с потрясающей акустикой для того, чтобы исполнить лучшие джазовые композиции и собственные импровизации.Это новый формат отдыха.</span>
+                    <p>Сергей Жилин - народный артист России, виртуозный джазовый пианист,
+                         дирижер, композитор и педагог, творчество которого широко известно 
+                         как в нашей стране так и за ее пределами, откроет вам собственный 
+                         музыкальный мир. <span id="dots"></span><span id="more">Вас ждут удивительные музыкальные
+                             открытия, мастерство исполнения джаза и незабываемые эмоции.
+                        аждые две недели Сергей Жилин за роялем первоклассного Steinway & 
+                        Sons и его блистательная команда ждут вас в двухуровневом камерном 
+                        зале с потрясающей акустикой для того, чтобы исполнить лучшие джазовые 
+                        композиции и собственные импровизации.Это новый формат отдыха.</span>
                     </p>
                     <div class="moreLink">
-                        <a  href="">подробнее</a>
+                        <button onclick="myFunction()" id="myBtn">подробнее</button> 
                     </div>
                 </div>
                 <div class="clubImages">
@@ -148,14 +164,20 @@
             </div>
             <h2 class="ticketH2">билеты</h2>
             <div class="ticket">
-                <div>
+                <div class="ticketNameContainer">
+                    <div>
                     <h1 class="tketJazz">JAZZ</h1>
+                    </div>
+                    <div class="containerVivaldi">
+                    <p class="ticketTime">12 октября.  19։00</p>
+                    <p class="ticketName">вивальди</p>
+                    <p class="ticketName">времена года</p>
+                    </div>
                 </div>
-                <div class="containerVivaldi">
-                    <img src="images/22.svg" alt="img">
-                </div>
+                
                 <div class="centerContainer">
-                    <div><p class="center"> Культурный центр 
+                    <div class="centerLine">
+                        <p class="center"> Культурный центр 
                         ГлавУпДК при МИД России</p></div>
                     <div><p class="center1">от 1000 руб.</p> </div>
                 </div>
@@ -171,7 +193,7 @@
         </div>
 
             <div class="map">
-                <img src="images/image 1.png" alt="img">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A06ca0772c10b51c9db7f287f5a203f5265111135918f9f160af1b8ccbc5ec2fd&amp;source=constructor" width="100%" height="462" frameborder="0"></iframe>
             </div>
         <div class="header">
 
@@ -229,15 +251,15 @@
                 <div class="jazzClub">
                     <div class="jazzClubMob">
                     <a href="">Джаз-клуб Сергея Жилина</a>
-                    <span class="copyright2">© 2021</span>
+                    <span class="copyright2">&#169; 2021</span>
                     </div>  
                 </div>
                 <div class="socicon">
-                    <li><a href=""><img src="images/FrameYoutube.svg" alt=""></a></li>
-                    <li><a href=""><img src="images/FrameInsta.svg" alt=""></a></li>
-                    <li><a href=""><img src="images/FrameTelegramm.svg" alt=""></a></li>
-                    <li><a href=""><img src="images/FrameTw.svg" alt=""></a></li>
-                    <li><a href=""><img src="images/FrameWhats.svg" alt=""></a></li>
+                    <i class="fa fa-youtube-play  fa-white" ></i> 
+                    <i class="fa fa-instagram  fa-white"  ></i>
+                    <i class="fa fa-send-o  fa-white" ></i>
+                    <i class="fa fa-vk  fa-white" ></i>
+                    <i class="fa fa-whatsapp fa-white" ></i> 
                 </div>
 
             </div>
@@ -255,7 +277,7 @@
             </div>
 
             <div class="copyright">
-                <div class="copyright1"><p>© 2021</p> </div>
+                <div class="copyright1"><p>&#169; 2021</p> </div>
                 
             </div>
         </div>    
@@ -263,6 +285,6 @@
 
     </div>
 </div>
-
+ <script src="script.js"></script>
 </body>
 </html>
