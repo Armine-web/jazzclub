@@ -116,7 +116,7 @@ img, svg{
     justify-content: flex-end;
 }
 .logo{
-  margin-left: -10px;
+  margin-left: -20px;
 }
 
 .navLinkName{
@@ -132,18 +132,24 @@ img, svg{
 .navLinkName:not(:last-child){
     margin-right: 59px;
 }
-.burgerMenu{
+.title{
     display: none;
 }
 @media only screen and (max-width: 400px){
   .header, .wrapper{
-    width: 92.72%;;
+    width: 92.72%;
   }
+  .header{
+    padding-top: 24px;
+  }
+  
 }
 
 @media only screen and (max-width: 800px) {
-    .burgerMenu{
-        display: block;
+    .title{
+        display: flex;
+        justify-content: flex-end;
+        
     }
     .navLink ul{
         display: none;
@@ -220,14 +226,32 @@ img, svg{
   .buyTickets1{
     display: none;
   }
-  .line{
+
+  .lineblock{
     display: none;
+    max-width: 59%;
+    width: 100%;
+  }
+  .line img{
+    object-fit: cover;
   }
   .JazzJilin{
     display: flex;
     align-items: center;
   }
-  @media only screen and (max-width: 1440px){
+
+
+  @media only screen and (max-width: 1323px){
+    .buyTickets{
+        display: none;
+      }
+    .buyTickets1{
+        display: block;
+        text-align: right;
+        margin-top: 40px;
+      }
+  }
+    @media only screen and (max-width: 1013px){
     .jazz h1 {
       font-size: 190px;
       line-height: 140px;
@@ -239,17 +263,9 @@ img, svg{
     .headerBottomText {
       width: 450px;
   }
+  .headerBottomText p{
+    line-height: 120%;
   }
-
-  @media only screen and (max-width: 1250px){
-    .buyTickets{
-        display: none;
-      }
-    .buyTickets1{
-        display: block;
-        text-align: right;
-        margin-top: 40px;
-      }
   }
 
   @media only screen and (max-width: 973px){
@@ -272,6 +288,12 @@ img, svg{
   @media only screen and (max-width: 919px){
     .headerBottomText p{
       font-size: 14px;
+      line-height: 140%;
+    }
+    
+  }
+  @media only screen and (max-width: 875px){
+    .headerBottomText p{
       line-height: 120%;
     }
     
@@ -285,7 +307,7 @@ img, svg{
         font-size: 45px;
       }
       .headerBottomText p{
-        line-height: 110%;
+        line-height: 140%;
         font-size: 13px;
       }
       .jazz h1{
@@ -295,6 +317,27 @@ img, svg{
 
 
   }
+  @media only screen and (max-width: 800px){
+    .headerBottomText p{
+      line-height: 115%;
+    }
+    .jilin {
+      margin-right: 10px;
+  }
+    
+  }
+  @media only screen and (max-width: 755px){
+.headerBottomText p {
+    line-height: 140%;
+    font-size: 12px;
+}
+  }
+  @media only screen and (max-width: 745px){
+    .headerBottomText p {
+        line-height: 115%;
+        font-size: 12px;
+    }
+      }
   @media only screen and (max-width: 721px){
     .headerBottomText{
         display: none;
@@ -308,9 +351,6 @@ img, svg{
 
     }
    
-    
-    
-
     .lineAndLink{
         display: flex;
         margin-top: 40px;
@@ -330,45 +370,40 @@ img, svg{
     }
 
   }
-  @media only screen and (max-width: 576px){
-   .line{
+  @media only screen and (max-width: 600px){
+   .lineblock{
     display: inline-block;
     align-items: center;
-    
-    max-width: 100%;
+   
    
     } 
   }
   
-
+  @media only screen and (max-width: 478px){
+    .lineblock{
+    max-width: 50%;
+    }
+  }
   @media only screen and (max-width: 400px){
 
-  .line{
-    display: inline-block;
-    align-items: center;
-    
-    width: 80%;
-    } 
+
 .line img{
     display: inline-block;
     vertical-align: middle;
     
 }
 .jazz h1{
-      font-size: 130px;
-      line-height: 130px;
+      font-size: 140px;
+      line-height: 140px;
     }
     .jilin h2 {
-      line-height: 36px;
+      line-height: 38px;
       font-size: 36px;
   }
 }
   @media only screen and (max-width: 381px){
    
-    .jilin h2{
-      line-height: 40px;
-      font-size: 44px;
-    }
+   
     .jilin{
       margin-bottom: 0;
     }
@@ -376,8 +411,8 @@ img, svg{
   
   }
   @media only screen and (max-width: 369px){
-.line{
-        display: none;
+.lineblock{
+        max-width: 40%;
       }
   }
   @media only screen and (max-width: 351px){
@@ -390,6 +425,11 @@ img, svg{
       line-height: 120px;
     }
   }
+  @media only screen and (max-width: 301px){
+    .lineblock{
+            max-width: 30%;
+          }
+      }
  
 
   .events{
@@ -400,10 +440,8 @@ img, svg{
   .eventsContainer{
     width: 100%;
     flex-wrap: wrap;
-    margin: 0 -5px;
-    flex: 1 1 auto;
-    margin: 0 5px;
-    margin-top: 55px;
+    margin: 0 -1%;
+    margin-top: 45px;
     display: flex;
     justify-content: flex-start;
     
@@ -412,7 +450,7 @@ img, svg{
   
   .eventsImage{
     flex: 1 1 auto;
-    margin: 0 5px;
+    margin: 1%;
     margin-top: 10px;
     display: flex;
     align-items: flex-end;
@@ -433,7 +471,7 @@ img, svg{
     -webkit-filter: grayscale(0); 
     filter: grayscale(0);
   }
-  .jazz{
+  .jazz, .jazz3{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -441,9 +479,13 @@ img, svg{
     line-height: 17px;
     align-items: center;
     text-transform: capitalize;
-    color: #FFFFFF; 
+    color: #ffffffe1; 
+    margin-bottom: 15px;
     
     
+  }
+  .jazz2{
+    display: none;
   }
   h3{
     font-family: 'JOURNALISM';
@@ -456,13 +498,13 @@ img, svg{
     color: #FFFFFF;
   }
   .eventsInner{
-    padding: 20px;
+    padding: 0 20px;
 
   }
   .jazzTime{
     border-bottom: 1px solid #ffffff00;
     width: 163px;
-    margin-bottom: 31px;
+    margin-bottom: 25px;
   }
   
   .jazzTime:hover{
@@ -477,6 +519,9 @@ img, svg{
   }
   .JazzrubSimbol{
     display: none;
+  }
+  .jazzTimePInner{
+    color: #f5f5f5b0;
   }
 
   @media only screen and (max-width: 1600px){
@@ -500,6 +545,7 @@ img, svg{
       font-size: 12px;
       line-height: 15px;
     }
+  
 
   }
   @media only screen and (max-width: 1000px){
@@ -510,7 +556,7 @@ img, svg{
     }
     .eventsImage{
       width: 100%;
-      max-width: 29%;
+      max-width: 31%;
       height: 388px;
     }
 
@@ -555,18 +601,24 @@ img, svg{
   @media only screen and (max-width: 600px){
     
     .eventsImage{
-      max-width: 45%;
-      height: 382px;
+      max-width: 48%;
+      height: 360px;
   }
   .eventsContainer{
     width: 100%;
     flex-wrap: wrap;
   }
 }
+@media only screen and (max-width: 518px){
+    
+  .eventsImage{
+    height: 300px;
+}
+}
+
+
  @media only screen and (max-width: 483px){
 
- 
- 
   .jazzTimePInner,.jazzTime, .eeventsInner{
     width: 130px;
   }
@@ -575,27 +627,43 @@ img, svg{
     width: 140px;
   }
 }
-
-@media only screen and (max-width: 434px){
- 
-  
- 
+@media only screen and (max-width: 440px){
+    
+  .eventsImage{
+    height: 278px;
 }
+.jazz1{
+ display: none;
+}
+.jazz2{
+  display: block;
+}
+}
+
+
   @media only screen and (max-width: 365px){
     
     .eventsContainer{
       width: 100%;
-      margin: auto;
       margin-top: 20px;
-      display: block;
       
     }
-   .eventsImage{
-    max-width: 90%;
-    height: 478px;
+  
+  .jazzTimePInner,.jazzTime, .eeventsInner{
+    width: 100%;
   }
+
+  
     
-    
+  }
+  @media only screen and (max-width: 343px){
+      .jazzTimep {
+    margin-right: 4px;
+}
+
+.jazz{
+  font-size: 9px;
+}
   }
  
 
@@ -636,6 +704,9 @@ img, svg{
   .buyTicketsJili1{
     display: none;
   }
+  #dots{
+    display: none;
+  }
 
   .moreLink, .moreLink1, .moreLink2, .moreLink3{
     display: none;
@@ -660,7 +731,7 @@ img, svg{
       display: none;
     }
   }
-  @media only screen and (max-width: 960px){
+  @media only screen and (max-width: 1100px){
       .jilin1{
         display: none;
       }
@@ -668,7 +739,7 @@ img, svg{
         display: flex;
         margin-bottom: 55px;
         gap: 40px;
-        margin-top: 120px;
+        margin-top: 80px;
       }
       .buyTicketsJili1{
         display: flex;
@@ -730,7 +801,11 @@ img, svg{
       border: none;
       margin-top: 0;
     }
-    #more1, #more3{
+    #more3{
+      display: none;
+      
+    }
+    #more1{
       display: none;
       
     }
@@ -757,10 +832,11 @@ img, svg{
       margin-bottom: 40px;
     }
   }
-  @media only screen and (max-width: 400px){
+  @media only screen and (max-width: 403px){
     .jilinTitle h2{
       font-size: 40px;
       line-height: 40px;
+      gap: 20px;
     }
   }
 
@@ -778,7 +854,6 @@ img, svg{
   }
   .clubImages img{
     width: 598px;
-    height: 344px;
     min-height: 100%;
     object-fit: cover;
   }
@@ -816,7 +891,6 @@ img, svg{
       }
       .clubImages{
         width: 328px;
-        height: 400px;
         object-fit: none; 
       }
      
@@ -825,10 +899,10 @@ img, svg{
     .clubContainer{
       flex-direction: column;
       justify-content: center;
+      margin-top: 60px;
     }
     .clubImages{
       width: 100%;
-      min-height: 217px; 
       object-fit: cover;
 
     }
@@ -850,9 +924,7 @@ img, svg{
   }
  
   @media only screen and (max-width: 500px){
-    .clubImages{
-      margin-bottom: 20px;
-    }
+
     .ticketH2{
 
       margin-bottom: 45px;
@@ -869,7 +941,7 @@ img, svg{
   @media only screen and (max-width: 370px){
  
     .ticketH2{
-      margin-top: 0;
+      margin-top: 80px;
       margin-bottom: 15px;
     }
   
@@ -879,14 +951,13 @@ img, svg{
     margin-top: 85px;
   }
   .watched{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items:flex-start;
-    justify-content: flex-start;
-    flex: 1 1 auto;
-    margin: 0 5px;
   }
   .watchedImage{
+    width: 100%;
     -webkit-filter: grayscale(100%); 
     filter: grayscale(100%);
   }
@@ -894,6 +965,16 @@ img, svg{
     -webkit-filter: grayscale(0); 
     filter: grayscale(0);
   }
+  .watched:hover .watchedP{
+    border-bottom: 1px solid #000000;
+  }
+  .watched1{
+    max-width: 23%;
+    flex: 1 1 auto;
+    margin: 1%;
+
+  }
+  
 
   .watchedP p{
     margin-top: 12px;
@@ -904,7 +985,7 @@ img, svg{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin: 0 -5px;
+    margin: 0 -1%;
     margin-top: 55px;
 
   }
@@ -920,62 +1001,32 @@ img, svg{
 }
 
 
-.watchedImage{
-  width: 100%;
-  height: 190px;
-}
-.watchedImage img{
-  width: 100%;
-  height: 190px;
-}
-.watched{
-  width: 22%;
-}
-  @media only screen and (max-width: 1600px){
-    .watchedImage{
-      height: 130px;
-    }
-    .watchedImage img{
-      height: 130px;
-    }
-   
 
-  }
+
   @media only screen and (max-width: 907px){
+    .watchedContainer{
+      flex-wrap: wrap;
+    }
     .watchedA{
       display: none;
-      gap: 15px;
-       
+
     }
-    .watched{
-      width: 206px;
+    .watched1{
+      max-width: 31%;
     }
+    
     .watchedImage{
-      width: 206px;
+     
       height: 123.3px;
     }
     .watchedImage img{
-      width: 206px;
       height: 123.3px;
     }
     
   }
   @media only screen and (max-width: 763px){
     
-    .watchedContainer{
-     gap: 0px;
-      justify-content: flex-start;
-      
-     
-    }
-    .watchedImage{
-      width: 180px;
-      height: 78px;
-    }
-    .watchedImage img{
-      width: 180px;
-      height: 78px;
-    }
+
     .watchedP p{
       font-size: 16px;
       line-height: 20px;
@@ -989,52 +1040,47 @@ img, svg{
       font-size: 40px;
       line-height: 40px;
     }
-    .wrapper{
-      width: 88.6%;
-    }
+   
     .watchedH2{
       margin-top: 20px;
     }
   }
-  @media only screen and (max-width: 632px){
+  @media only screen and (max-width: 569px){
     .watchedA{
       display: block;
     }
-    .watchedContainer{
-      flex-wrap: wrap;
-      justify-content: flex-start;
+  .watchedContainer{
+    flex-wrap: wrap;
+  } 
+ 
+  .watched1{
+    max-width: 47%;
+    width: 100%;
   }
 }
+
   @media only screen and (max-width: 489px){
-     
       
-    
     .watchedImage{
-      width: 150px;
+      width: 100%;
       height: 72px;
     }
     .watchedImage img{
-      width: 150px;
+      width: 100%;
       height: 72px;
     }
     .watched{
-      width: 150px;
+      width: 100%;
       margin: 5px;
     }
   }
 
+
   
     @media only screen and (max-width: 355px){
     
-    .watchedImage {
-      width: 130px;
-      height: 72px;
-    }
-    .watched{
-      width: 130px;
-    }
+
     .watchedImage img{
-      width: 130px;
       height: 72px;
     }
     .watchedP {
@@ -1042,19 +1088,7 @@ img, svg{
     }
 
   }
-  @media only screen and (max-width: 331px){
-    .watchedImage {
-      width: 110px;
-      height: 72px;
-    }
-    .watched{
-      width: 110px;
-    }
-    .watchedImage img{
-      width: 110px;
-      height: 72px;
-    }
-  }
+
 
   .footer{
     width: 100%;
@@ -1074,9 +1108,9 @@ img, svg{
     
   }
 
-  .jazzClub a,
-  .foterOrign a,
-  .agreement a,
+  .jazzClub span,
+  .foterOrign span,
+  .agreement span,
   .copyright p{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -1112,11 +1146,16 @@ img, svg{
   .copyright2{
     display: none;
   }
+  .footerContacts{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+  }
 
   @media only screen and (max-width: 916px){
-    .jazzClub a,
-    .foterOrign a,
-    .agreement a,
+    .jazzClub span,
+    .foterOrign span,
+    .agreement span,
     .copyright p{
     font-size: 12px;
     line-height: 18px;
@@ -1144,6 +1183,7 @@ img, svg{
       margin: auto;
       flex-wrap: wrap;
     }
+    
     .jazzClubInner{
       margin: auto;
       width: 100%;
@@ -1175,13 +1215,15 @@ img, svg{
       display: flex;
       justify-content: space-between;
     }
-  }
-  @media only screen and (max-width: 373px){
-    .foterOrign, .agreement{
-      width: 122px;
+    .footerContacts{
+      width: 100%;
+      flex-direction: row-reverse;
     }
-    .foterOrign a, .agreement a{
-      font-size: 7;
+  }
+  @media only screen and (max-width: 335px){
+    
+    .foterOrign span, .agreement span{
+      font-size: 10px;
     }
   }
 
@@ -1196,18 +1238,15 @@ img, svg{
     justify-content: space-between;
   }
 
-.contactTextInner{
-  display: flex;
-  height: 344px;
-  justify-content: space-between;
-  flex-direction: column;
+.contactTextInner h2{
+  margin-bottom: 70px;
 }
  .contactText{
-  display: flex;
-  flex-direction: column;
-  height: 167px;
+  height: auto;
   width: 598px;
-  justify-content: space-between;
+ }
+ .contactText div{
+  margin-bottom: 55px;
  }
  .contactImages{
   width: 598px;
@@ -1225,6 +1264,11 @@ img, svg{
     align-items: flex-start;
     margin: auto;
     
+
+  }
+  .contactText div p{
+    font-size: 32px;
+    line-height: 140%;
   }
   .contactImages{
       width: 100%;
@@ -1233,19 +1277,56 @@ img, svg{
      }
      .contactText{
       width: 100%;
-      height: 187px;
      }
      .contactImages img{
       width: 100%;
       height: auto;
      }
      .contactTextInner{
-      height: 280px;
       margin-top: 60px;
      }
   }
+  @media only screen and (max-width: 808px){
+    .contactText div p{
+      font-size: 30px;
 
+    }
+    .contactText div{
+      margin-bottom: 35px;
+     }
+  }
+    @media only screen and (max-width: 763px){
+      .contactText div p{
+        font-size: 25px;
+  
+      }
+      .contactImages{
+        margin-bottom: 50px;
+      }
+    }
+    @media only screen and (max-width: 632px){
+      .contactText div p{
+        font-size: 20px; 
+      }
+     
+    }
 
+    @media only screen and (max-width: 505px){
+      .contactText div p{
+        font-size: 15px;
+  
+      }
+      .contactText div{
+        margin-bottom: 20px;
+       }
+     
+    }
+    @media only screen and (max-width: 364px){
+      .contactText div p{
+        font-size: 12px;
+  
+      }
+    }
  /* events */
 
  .eventsJazzContainer{
@@ -1274,6 +1355,7 @@ img, svg{
  }
  .eventTitle h1{
   margin-left: -70px;
+
  }
  .eventImage, .eventImage img{
   width: 600px;
@@ -1335,7 +1417,7 @@ img, svg{
     margin: auto;
     align-items: center;
     flex-direction: column;
-    margin-top: 69px;
+    margin-top: 0px;
 
   }
   .eventsJazzRight{
@@ -1361,8 +1443,8 @@ img, svg{
    .eventsJazzRightInner{
     flex-direction: column-reverse;
     align-items: flex-start;
-    
    }
+   
    .eventsP{
    max-width: 100%;
    width: 100%;
@@ -1372,12 +1454,13 @@ img, svg{
     position: relative;
    }
    .eventh2{
-    margin-top: 50px;
+    margin-top: 25px;
    }
    .eventTime1 {
     position: absolute;
-    top:  -305px;
+    top:  -315px;
     font-size: 40px;
+    left: 4px;
   }
   .eventsJazzRightInner{
     margin-top: 30px;
@@ -1386,25 +1469,27 @@ img, svg{
  @media only screen and (max-width: 970px){
   .eventTime1{
     font-size: 40px;
-    top: -328px;
+    top: -312px;
   }
   .eventTitle {
     margin-bottom: -250px;
     margin-right: -50px;
 
   }
+  .eventTitle h1{
+    margin-bottom: 20px;
+  }
  }
 
  @media only screen and (max-width: 730px){
   .eventTime1{
-    left: -5px;
-    top: -376px;
+    top: -372px;
   }
   .eventTitle {
     margin-bottom: -350px;
 }
 .eventTime1 {
-  font-size: 26px;
+  font-size: 24px;
 line-height: 26px;
 }
 .eventsJazzLeft h1{
@@ -1412,6 +1497,9 @@ line-height: 26px;
   line-height: 160px;
   margin-left: -50px;
 
+}
+.eventTitle h1 {
+  margin-bottom: 10px;
 }
 .eventh2Name{
   font-size: 40px;
@@ -1433,7 +1521,8 @@ line-height: 26px;
 
   .eventTime1 {
     font-size: 18px;
-    top: -210px;
+    top: -205px;
+    left: -5px;
 
   }
 .eventsJazzLeft h1{
@@ -1480,6 +1569,7 @@ line-height: 26px;
 .eventConcert{
   -webkit-filter: grayscale(100%); 
   filter: grayscale(100%);
+
 }
 .eventConcert:hover{
   -webkit-filter: grayscale(0); 
@@ -1494,7 +1584,7 @@ line-height: 26px;
   font-family: 'JOURNALISM';
   font-style: normal;
   font-weight: 400;
-  font-size: 89px;
+  font-size: 88px;
   line-height: 89px;
   letter-spacing: 0.1em; 
   text-transform: uppercase;
@@ -1512,8 +1602,7 @@ line-height: 26px;
   align-items: center;
   text-align: right;
   text-transform: uppercase;
-  letter-spacing: 36px;
-  margin-right: -35px;
+  letter-spacing: 14px;
   color: #000000;
 }
 .promocode{
@@ -1529,8 +1618,47 @@ line-height: 26px;
   color: #000000;
 }
 
+@media only screen and (max-width: 1170px){
+ .clubTextEvent1{
+    width: 100%;
+  }
+  .discount{
+    font-size: 110px;
+    line-height: 90px;
+    letter-spacing: 0.15em;
+  }
+  .shop{
+    font-size: 54px;
+  }
+  .promocode{
+    font-size: 52px;
 
-@media only screen and (max-width: 960px){
+  }
+  .eventLinkName{
+    margin-top: 40px;
+  }
+}
+@media only screen and (max-width: 736px){
+ 
+ 
+  .discount{
+   
+    font-size: 89px;
+    line-height: 89px;
+    letter-spacing: 0.1em;
+  }
+  .shop{
+    font-size: 28px;
+  }
+  .promocode{
+    font-size: 37px;
+
+  }
+ 
+}
+
+
+@media only screen and (max-width: 1100px){
   .eventConcertH2{
     display: block;
     margin-top: 90px;
@@ -1542,7 +1670,7 @@ line-height: 26px;
 @media only screen and (max-width: 723px){
   .eventConcert{
     width: 100%;
-    height: 1000px;
+    height: 140px;
   }
   .eventConcert img{
     width: 38px;
@@ -1558,7 +1686,7 @@ line-height: 26px;
   }
   .discount{
    
-    font-size: 60px;
+    font-size: 70px;
     line-height: 60px;
     text-align: right; 
   }
@@ -1566,17 +1694,16 @@ line-height: 26px;
     font-size: 20px;
     line-height:20px;
     text-align: right;
-    letter-spacing: 24px;
-    margin-right: -23px;
+    letter-spacing: 12px;
   }
   .promocode{
-    font-size: 25.5px;
+    font-size: 29.8px;
     line-height: 25px;
     text-align: right;
   }
  
 }
-@media only screen and (max-width: 339px){
+@media only screen and (max-width: 365px){
  
   .clubTextEvent1{
     width: 249px;
@@ -1588,11 +1715,10 @@ line-height: 26px;
     text-align: right; 
   }
   .shop{
-    font-size: 15px;
+    font-size: 12px;
     line-height:15px;
     text-align: right;
-    letter-spacing: 21px;
-    margin-right: -17px;
+    letter-spacing: 9.5px;
   }
   .promocode{
     font-size: 21.5px;
@@ -1739,6 +1865,14 @@ line-height: 26px;
   margin-top: 15px;
 
 }
+.map{
+  -webkit-filter: grayscale(100%); 
+  filter: grayscale(100%);
+}
+.map:hover{
+  -webkit-filter: grayscale(0); 
+  filter: grayscale(0);
+}
 
 
 @media only screen and (max-width: 1238px){
@@ -1764,7 +1898,7 @@ line-height: 26px;
   }
   .centerContainer{
     width: 100%;
-    margin-top: 60px;
+    margin-top: 40px;
     align-items: flex-end;
     height: auto;
     flex-direction: row;
@@ -1777,7 +1911,7 @@ line-height: 26px;
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 10px;
     padding: 0;
   }
   .elipsLine{
@@ -1853,14 +1987,35 @@ line-height: 26px;
       width: 81px;
     }
     .tketJazz{
-      font-size: 110px;
+      font-size: 130px;
       line-height: 75px;
+    }
+    .ticketTime{
+      font-size: 20px;
+      line-height: 20px;
+    }
+    .ticketName{
+      font-size: 38px;
+      line-height: 38px;
+
     }
     .containerVivaldi{
       width: 100%;
     }
   }
-  @media only screen and (max-width: 339px){
+  @media only screen and (max-width: 416px){
+    .ticketTime{
+      font-size: 16px;
+      line-height: 20px;
+    }
+    
+    .ticketName{
+      font-size: 24px;
+      line-height: 40px;
+
+    }
+  }
+  @media only screen and (max-width: 354px){
     .tketJazz{
       font-size: 90px;
       line-height: 55px;
@@ -1871,7 +2026,7 @@ line-height: 26px;
     }
     .ticketName{
       font-size: 24px;
-      line-height: 36px;
+      line-height: 30px;
 
     }
     .elipsLine{
@@ -1886,16 +2041,12 @@ line-height: 26px;
 
   /* mob */
   .menuContainerMob{
-    width: 263px;
+    width: 200px;
     height: 701px;
     background: #FFFFFF;
-    padding: 20px;
+  
   }
-  .cros{
-    width: 220px;
-    display: flex;
-    justify-content: flex-end;
-  }
+ 
   .navLinkMob ul{
     display: flex;
     flex-direction: column;
@@ -1903,19 +2054,16 @@ line-height: 26px;
     height: 110px;
     width: 130px;
   }
-  .navLinkMobContainer{
-    margin-top: 68px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    height: 550px;
-  }
+
   .navLinkMob a{
     font-size: 24px;
     line-height: 24px;
   }
+  .navLinkMob .navLinkName{
+    margin: 0;
+  }
   .sociconMob{
+    margin-top: 380px;
     justify-content: space-between;
     width: 100%;
     display: flex;
@@ -1926,38 +2074,114 @@ line-height: 26px;
     Height: 17.66px;
   }
 /* colaps */
-.containerColapse{
-  max-width: 722px;
-  margin: auto;
-  flex-direction: column;
-  width: 100%;
 
-  padding: 20px;
-}
-  .more1{
+  
+  /* #more1{
     display: block;
-  }
-  .video{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    width: 500px;
-    height: 400px;
-    background-color: #ffffffc2;
-  }
-  .videoCross{
-    position: absolute;
-    top: 30px;
-    right: 52px;
-  }
+  } */
+ 
+  
   .fa-white{
     color: #ffffffc2;
     font-size: 22px;
     font-style: normal;
 
     }
+/* menu */
+.container{
+  position: relative;
+}
+
+
+.title {
+  color:black;
+  font-size: 28px;
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+  right: 6%;
+  top: 50px;
+}
+
+.figure-caption-test{
+  display: none;
+  width: 263px;
+  padding: 20px;
+  background-color: #F5F5F5;
+  justify-content: space-between;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+.navLinkMob{
+  margin-top: 160px;
+}
+@media only screen and (max-width: 400px){
+  .title{
+    right: 2.5%;
+    top: 12px;
+  }
+}
+
+
+/* modal */
+.modalBtn{
+  position: absolute;
+  z-index: 5;
+  left: 45%;
+  top: 50%;
+}
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: 2% auto; 
+  padding:44px 20px 76px;
+  border: 1px solid #888;
+  width: 60%; 
+}
+@media only screen and (max-width: 1200px){
+  .modal-content{
+    width: 80%; 
+    padding:14px 10px 26px;
+  }
+ 
+}
+
+
+.close {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 35px;
+  color: #000000;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
   
  
   

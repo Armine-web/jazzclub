@@ -36,13 +36,13 @@ function myFunction1() {
   var btnText1 = document.getElementById("myBtn1");
 
   if (dots1.style.display === "none") {
-    dots1.style.display = "inline";
+    dots1.style.display = "block";
     btnText1.innerHTML = "подробнее"; 
     moreText1.style.display = "none";
   } else {
     dots1.style.display = "none";
     btnText1.innerHTML = "свернуть"; 
-    moreText1.style.display = "inline";
+    moreText1.style.display = "block";
   }
 }
 function myFunction() {
@@ -59,4 +59,93 @@ function myFunction() {
       btnText.innerHTML = "свернуть"; 
       moreText.style.display = "inline";
     }
+  };
+
+
+  //menu
+
+
+
+  function toggleText(){
+    var elms = document.getElementsByClassName("figure-caption-test");
+    var title = document.querySelector(".title");
+    var container = document.querySelector(".container");
+    Array.from(elms).forEach((x) => {
+      if (x.style.display === "none") {
+        x.style.display = "block";
+        container.style.backgroundColor = "rgba(0, 0, 0, 0.71)";
+            x.style.backgroundColor = "white";
+            title.innerText = '╳';
+            console.log(title);
+      } else {
+        x.style.display = "none";
+        container.style.backgroundColor ="#F5F5F5";
+        title.innerText = '☰';
+      }
+    })
   }
+
+  function toggleText1(){
+    var elms = document.getElementsByClassName("figure-caption-test");
+    var title = document.querySelector(".title");
+    var container = document.querySelector(".container");
+    var eventsJazzContainer = document.querySelector(".eventsJazzContainer")
+    Array.from(elms).forEach((x) => {
+      if (x.style.display === "none") {
+        x.style.display = "block";
+        container.style.backgroundColor = "rgba(0, 0, 0, 0.71)";
+       eventsJazzContainer.style.backgroundColor = "rgba(0, 0, 0, 0.71)";
+            x.style.backgroundColor = "white";
+            title.innerText = '╳';
+            console.log(title);
+      } else {
+        x.style.display = "none";
+        container.style.backgroundColor ="#F5F5F5";
+       eventsJazzContainer.style.backgroundColor ="#F5F5F5";
+        title.innerText = '☰';
+      }
+    })
+  }
+
+
+  //modal
+
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("btn");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+
+// play
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused){
+    myVideo.play() 
+  } else {
+    myVideo.pause() 
+  }
+    
+  
+    
+} 
+
+        
+      
+        
+
+
+      
+       
+     
