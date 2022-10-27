@@ -67,6 +67,7 @@ function myFunction() {
 
 
   function toggleText(){
+
     var elms = document.getElementsByClassName("figure-caption-test");
     var title = document.querySelector(".title");
     var container = document.querySelector(".container");
@@ -76,16 +77,29 @@ function myFunction() {
         container.style.backgroundColor = "rgba(0, 0, 0, 0.71)";
             x.style.backgroundColor = "white";
             title.innerText = '╳';
-            console.log(title);
+
+            document.getElementById("disabled").style.pointerEvents = "none";
+            document.getElementById("disabled1").style.pointerEvents = "none";
+            document.getElementById("footer").style.pointerEvents = "none";
+            
+           
+
+           
+            
+            
       } else {
         x.style.display = "none";
         container.style.backgroundColor ="#F5F5F5";
         title.innerText = '☰';
+        document.getElementById("disabled").style.pointerEvents = "auto";
+            document.getElementById("disabled1").style.pointerEvents = "auto";
+            document.getElementById("footer").style.pointerEvents = "auto";
       }
     })
   }
 
   function toggleText1(){
+    var disabled3 =document.querySelector(".disabled3"); 
     var elms = document.getElementsByClassName("figure-caption-test");
     var title = document.querySelector(".title");
     var container = document.querySelector(".container");
@@ -93,22 +107,41 @@ function myFunction() {
     Array.from(elms).forEach((x) => {
       if (x.style.display === "none") {
         x.style.display = "block";
+        
         container.style.backgroundColor = "rgba(0, 0, 0, 0.71)";
-       eventsJazzContainer.style.backgroundColor = "rgba(0, 0, 0, 0.71)";
+       document.querySelector(".containerMain").style.backgroundColor = "rgba(0, 0, 0, 0.01)";
             x.style.backgroundColor = "white";
             title.innerText = '╳';
-            console.log(title);
+
+            disabled3.className = "mystyle";
+            document.querySelector(".disabled4").className = "mystyle";
+            document.querySelector(".disabled6").className = "mystyle";
+            document.querySelector(".disabled5").className = "mystyle";
+            document.querySelector(".disabled7").className = "mystyle";
+            document.querySelector(".mapContainer").className = "mystyle";
+           
+            
       } else {
-        x.style.display = "none";
+        x.style.display = "none"; 
         container.style.backgroundColor ="#F5F5F5";
-       eventsJazzContainer.style.backgroundColor ="#F5F5F5";
+        document.querySelector(".containerMain ").style.backgroundColor ="#F5F5F5";
         title.innerText = '☰';
+        document.querySelector(".mystyle").classList.remove("mystyle");
+      
+        
       }
     })
   }
 
 
   //modal
+  
+
+
+
+
+
+
 
 var modal = document.getElementById("myModal");
 var btn = document.getElementById("btn");
@@ -118,6 +151,8 @@ btn.onclick = function() {
 }
 span.onclick = function() {
   modal.style.display = "none";
+  myVideo.pause();
+  modalBtn.style.display="block";
 }
 
 window.onclick = function(event) {
@@ -128,18 +163,20 @@ window.onclick = function(event) {
 
 
 // play
-var myVideo = document.getElementById("video1"); 
+// var myVideo = document.getElementById("video1"); 
+// var modalBtn =document.getElementById("modalBtn");
+// function playPause() { 
+//   if (myVideo.paused){
+//     myVideo.play()
+//     modalBtn.style.display="none"
 
-function playPause() { 
-  if (myVideo.paused){
-    myVideo.play() 
-  } else {
-    myVideo.pause() 
-  }
+//   } else {
+//     myVideo.pause() 
+//   }
     
   
     
-} 
+// } 
 
         
       
